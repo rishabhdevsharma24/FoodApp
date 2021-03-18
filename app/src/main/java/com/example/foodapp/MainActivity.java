@@ -42,15 +42,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       /* Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-         toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        drawer = findViewById(R.id.drawer);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
-                R.string.open, R.string.close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();*/
 
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -73,20 +64,36 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Home Panel is Open",Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+                    case R.id.search :
+                        Toast.makeText(getApplicationContext(),"Search Panel is Open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.cart_view :
+                        Toast.makeText(getApplicationContext(),"Cart view Panel is Open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                   /* case R.id.cart :
+                        Toast.makeText(getApplicationContext(),"Cart Panel is Open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;*/
 
                     case R.id.menu_call :
                         Toast.makeText(getApplicationContext(),"Call Panel is Open",Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
-                    case R.id.menu_setting :
+                 /*   case R.id.menu_setting :
                         Toast.makeText(getApplicationContext(),"Setting Panel is Open",Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
+                        break;*/
                     case R.id.account :
                         Toast.makeText(getApplicationContext(),"Account Panel is Open",Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+
+
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + menuItem.getItemId());
                 }
 
                 return true;
@@ -103,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnlogin=findViewById(R.id.btnlogin);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
 
                 logIn();
             }

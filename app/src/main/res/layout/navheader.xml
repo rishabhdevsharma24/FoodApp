@@ -2,18 +2,20 @@
 <androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="@color/red"
+    android:background="@color/teal_200"
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="60sp"
+        android:layout_width="100dp"
+        android:layout_height="80sp"
+        android:layout_marginLeft="0dp"
         android:src="@drawable/rest"
 
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:textColor="@color/cardview_light_background"
         android:textSize="30dp"
         android:text="Accounts "/>
@@ -22,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/cardview_light_background"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:text="Welcome To Pulse"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

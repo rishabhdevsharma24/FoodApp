@@ -3,19 +3,20 @@
     <item android:id="@+id/menu_home"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Home"/>
-    <item android:id="@+id/cart"
+    <item android:id="@+id/cart_view"
         android:icon="@drawable/ic_cart"
-        android:title="Cart"/>
+        android:title="AddCart"/>
     <item android:id="@+id/search"
         android:icon="@drawable/ic_baseline_search_24"
         android:title="Search"/>
-    <item android:id="@+id/menu_call"
-            android:icon="@drawable/ic_call_black_24dp"
-            android:title="Call"/>
-    <item android:id="@+id/menu_setting"
-            android:icon="@drawable/ic_settings_black_24dp"
-            android:title="Setting"/>
+
+
     <item android:id="@+id/account"
         android:icon="@drawable/ic_account"
+
         android:title="Account"/>
+    <item android:id="@+id/menu_call"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="Login"/>
+
 </menu>
